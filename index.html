@@ -1,71 +1,103 @@
-<!DOCTYPE html>
-<html>
-<style>
-  body,
-  html {
-    height: 100%;
-    margin: 0;
-  }
+<!DOCTYPEhtml>
+  <html>
 
-  .bgimg {
-    background-image: url('safunet-background.png');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-  }
+    <head>
+      <meta charset="utf-8">
+      <title>SAFUDAO/SAFUYIELD-www.safu.net</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <style>
+      body,
+      html {
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        background-color: #1d3b4f;
+      }
 
-  .topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-  }
+      .bgimg {
+        background-image: url('safunet-background.png');
+        background-size: cover;
+        position: relative;
+        color: white;
+        font-family: "CourierNew", Courier, monospace;
+        font-size: 25px;
+      }
 
-  .bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-  }
+      .topleft {
+        position: relative;
+        top: 0;
+        left: 16px;
+        padding: 20px;
+        height: 100px;
+      }
 
-  .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    min-height: 400px;
-  }
+      .links-icons {
+        position: absolute;
+        padding: 36px;
+        top: 55%;
+        z-index: 1000;
+      }
 
-  img {
-    height: 100%;
-    width: auto;
-  }
+      a {
+        cursor: pointer;
+        text-decoration: none;
+      }
 
-  hr {
-    margin: auto;
-    width: 40%;
-  }
-</style>
+      .bottomleft {
+        position: relative;
+        bottom: 0;
+        left: 16px;
+        min-height: 120px;
+        padding: 20px;
+      }
 
-<body>
-  <div class="bgimg">
-    <div class="topleft">
-      <p><strong>SAFUDAO</strong> Governance Protocol</p>
-    </div>
-    <div class="middle">
-      <img src="safunet-logo.png" />
-      <hr>
-      <p>Stay tuned..</p>
-      <img src="safunet-bridge.png" />
-    </div>
-    <div class="bottomleft">
-      <p style="font-size: smaller;">SafuYield Protocol holders can create proposals, vote and participate in the
-        SAFUDAO Governance Protocol</p>
-    </div>
-  </div>
-</body>
+      .middle {
+        position: relative;
+        /*top:50%;left:50%;transform:translate(-50%,-50%);*/
+        text-align: center;
+        height: 600px;
+      }
 
-</html>
+      img {
+        max-width: 75%;
+      }
+
+      hr {
+        margin: auto;
+        width: 40%;
+      }
+    </style>
+    </head>
+
+    <body>
+      <div class="bgimg">
+        <div class="topleft">
+          <p><strong>SAFUDAO</strong> Governance Protocol</p>
+        </div>
+        <div class="links-icons">
+          <a href="https://safuyield.com" target="_blank">
+            <img src="safu01-web.svg" height="120">
+          </a>
+          <img src="safu-reddit.svg" height="120" />
+          <img src="safu04-poocoin.svg" height="120" />
+          <img src="safu02-news.svg" height="120" />
+        </div>
+        <div class="middle">
+          <img src="safunet-logo.png" />
+          <hr>
+          <p>Stay tuned..</p>
+          <img src="safunet-bridge.png" />
+        </div>
+        <div class="bottomleft">
+          <p style="font-size:smaller;">
+            <strong>SafuYield Protocol</strong> holders can create proposals,
+            vote and participate in the <strong>SAFUDAO</strong> Governance
+            Protocol
+          </p>
+        </div>
+      </div>
+    </body>
+
+  </html>
