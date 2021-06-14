@@ -24,6 +24,34 @@
         font-size: 25px;
       }
 
+      .button {
+        background-color: #00aaaa;
+        border: none;
+        color: white;
+        font-weight: 300;
+        padding: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        margin: 4px 2px;
+      }
+
+      .button-trade {
+        border-radius: 12px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+
+      .button-trade:before {
+        content: url("safu-trade-mascot.svg");
+        width: 40px;
+        float: left;
+        margin-right: 10px;
+        margin-top: -5px;
+      }
+
       .topleft {
         position: relative;
         top: 0;
@@ -87,7 +115,8 @@
       <div class="middle">
         <img src="safunet-logo.png" />
         <hr>
-        <p>Stay tuned..</p>
+        <p><a href="https://swap.safu.net"><button class="button button-trade">Trade
+              now</button></a></p>
         <img src="safunet-bridge.png" />
       </div>
       <div class="links-icons">
