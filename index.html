@@ -7,12 +7,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <style>
+
+      @font-face {
+        font-family: 'Pixel Millennium';
+        src: url('fonts/Pixel Millennium.ttf');
+      }
+
       body,
       html {
         height: 100%;
         overflow-x: hidden;
         margin: 0;
         background-color: #1d3b4f;
+        font-family: "Pixel Millennium", Fallback, "CourierNew", Courier, monospace;
+
       }
 
       .bgimg {
@@ -20,21 +28,20 @@
         background-size: cover;
         position: relative;
         color: white;
-        font-family: "CourierNew", Courier, monospace;
         font-size: 25px;
       }
 
       .button {
+        font-family: "Pixel Millennium", Fallback, "CourierNew", Courier, monospace;
         background-color: #00aaaa;
         border: none;
         color: white;
-        font-weight: 300;
+        font-weight: 600;
         padding: 20px;
-        padding-bottom: 10px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 26px;
+        font-size: 18px;
         margin: 4px 2px;
       }
 
@@ -42,14 +49,37 @@
         border-radius: 12px;
         cursor: pointer;
         text-transform: uppercase;
+        box-shadow: -3px 3px orange, -2px 2px orange, -1px 1px orange;
+        width: 150px;
+        height: 110px;
+        line-height: 1.6;
       }
 
       .button-trade:before {
         content: url("safu-trade-mascot.svg");
-        width: 40px;
-        float: left;
-        margin-right: 10px;
-        margin-top: -5px;
+        display: block;
+        height: 50px;
+        width: 50px;
+        margin: auto;
+      }
+
+      .button-bridge {
+        border-radius: 12px;
+        cursor: pointer;
+        background-color: #CCC;
+        text-transform: uppercase;
+        box-shadow: -3px 3px grey, -2px 2px grey, -1px 1px grey;
+        width: 150px;
+        height: 110px;
+        line-height: 0.5
+      }
+
+      .button-bridge:before {
+        content: url("safu-bridge.svg");
+        display: block;
+        height: 50px;
+        width: 50px;
+        margin: auto;
       }
 
       .topleft {
@@ -58,6 +88,8 @@
         left: 16px;
         padding: 20px;
         height: 100px;
+        font-weight: 600;
+        font-size: 30px;
       }
 
       .links-icons {
@@ -85,7 +117,6 @@
         left: 16px;
         min-height: 200px;
         padding: 20px;
-        /*margin-top: 100px;*/
       }
 
       .middle {
@@ -116,8 +147,9 @@
         <img src="safunet-logo.png" />
         <hr>
         <p><a href="https://swap.safu.net"><button class="button button-trade">Trade
-              now</button></a></p>
-        <img src="safunet-bridge.png" />
+              now</button></a> <button
+            class="button button-bridge">SAFUBRIDGE <span
+              style="font-size:12px;">(SOON)</span></button></p>
       </div>
       <div class="links-icons">
         <a href="https://www.safuyield.com" target="_blank">
@@ -163,7 +195,7 @@
         </a>
       </div>
       <div class="bottomleft">
-        <p style="font-size:smaller;">
+        <p style="font-size: 18px;">
           <strong>SafuYield Protocol</strong> holders can create proposals,
           vote and participate in the <strong>SAFUDAO</strong> Governance
           Protocol
